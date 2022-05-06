@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/screens/home/components/discount_banner_2.dart';
 
 import '../../../size_config.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
+import 'discount_banner_3.dart';
 import 'home_header.dart';
 import 'popular_product.dart';
 import 'special_offers.dart';
@@ -20,8 +22,8 @@ class Body extends StatelessWidget {
             SpecialOffers(),
             SizedBox(height: getProportionateScreenWidth(30)),
             DiscountBanner(),
-            DiscountBanner(),
-            DiscountBanner(),
+            DiscountBanner2(),
+            DiscountBanner3(),
             Categories(),
             // SpecialOffers(),
             // SizedBox(height: getProportionateScreenWidth(30)),

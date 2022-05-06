@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 
-class DiscountBanner extends StatelessWidget {
-  const DiscountBanner({
+class DiscountBanner2 extends StatelessWidget {
+  const DiscountBanner2({
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +18,7 @@ class DiscountBanner extends StatelessWidget {
         vertical: getProportionateScreenWidth(15),
       ),
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 141, 5, 5),
+        color: Color.fromARGB(255, 211, 55, 55),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text.rich(
@@ -27,7 +27,7 @@ class DiscountBanner extends StatelessWidget {
           children: [
             TextSpan(text: "Come back to the cart for\n"),
             TextSpan(
-              text: "20% of Cornell Red Mug ",
+              text: "15% off Cornell T-Shirt",
               style: TextStyle(
                 fontSize: getProportionateScreenWidth(24),
                 fontWeight: FontWeight.bold,

@@ -29,7 +29,7 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 image: "assets/images/Image Banner 2.png",
-                category: "Smartphone",
+                category: "Cornell Apparel",
                 numOfBrands: 18,
                 press: () {
                   print("here 1103832");
@@ -37,7 +37,7 @@ class SpecialOffers extends StatelessWidget {
               ),
               SpecialOfferCard(
                 image: "assets/images/Image Banner 3.png",
-                category: "Fashion",
+                category: "Cornell Gifts",
                 numOfBrands: 24,
                 press: () {
                   print("here 112331");
