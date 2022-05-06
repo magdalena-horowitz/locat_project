@@ -38,9 +38,9 @@ class CustomAppBar extends StatelessWidget {
                 ),
                 onPressed: () // => Navigator.pop(context),
                     =>
-                    Navigator.pushNamed(context, DiscountsScreen.routeName),
+                    Navigator.pushNamed(context, CartScreen.routeName),
                 child: SvgPicture.asset(
-                  "assets/icons/Phone.svg",
+                  "assets/icons/Back ICon.svg",
                   height: 15,
                 ),
               ),
