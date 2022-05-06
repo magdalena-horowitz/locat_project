@@ -26,7 +26,9 @@ class ProfileMenu extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           backgroundColor: Color(0xFFF5F6F9),
         ),
-        onPressed: press,
+        onPressed: () {
+          print("print as void Function");
+        }, //press,
         child: Row(
           children: [
             SvgPicture.asset(

@@ -45,16 +45,25 @@ class CustomBottomNavBar extends StatelessWidget {
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, HomeScreen.routeName),
+                onPressed: () {
+                  print("here 11111");
+                  Navigator.pushNamed(context, HomeScreen.routeName);
+                },
+                // () =>
+
+                //     Navigator.pushNamed(context, HomeScreen.routeName),
               ),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
-                onPressed: () {},
+                onPressed: () {
+                  print("hello world");
+                },
               ),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg"),
-                onPressed: () {},
+                onPressed: () {
+                  print("hi there");
+                },
               ),
               IconButton(
                 icon: SvgPicture.asset(
@@ -63,8 +72,13 @@ class CustomBottomNavBar extends StatelessWidget {
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
+                onPressed: () {
+                  print("here 11111");
+                  Navigator.pushNamed(context, ProfileScreen.routeName);
+                },
+
+                // () =>
+                //     Navigator.pushNamed(context, ProfileScreen.routeName),
               ),
             ],
           )),

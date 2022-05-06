@@ -53,6 +53,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: "continue",
             press: () {
               if (_formKey.currentState!.validate()) {
+                print("here 2");
                 Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
