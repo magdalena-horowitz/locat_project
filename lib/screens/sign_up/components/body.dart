@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/socal_card.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:Locat/components/socal_card.dart';
+import 'package:Locat/constants.dart';
+import 'package:Locat/size_config.dart';
 
 import 'sign_up_form.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/cart/cart_screen.dart';
-import 'package:shop_app/screens/discounts/discounts_screen.dart';
-import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:Locat/constants.dart';
+import 'package:Locat/screens/cart/cart_screen.dart';
+import 'package:Locat/screens/discounts/discounts_screen.dart';
+import 'package:Locat/screens/home/home_screen.dart';
 
 import '../../../size_config.dart';
 

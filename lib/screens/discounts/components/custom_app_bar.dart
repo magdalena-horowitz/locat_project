@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/cart/cart_screen.dart';
-import 'package:shop_app/screens/discounts/discounts_screen.dart';
-import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:Locat/constants.dart';
 
 import '../../../size_config.dart';
 
@@ -36,9 +33,7 @@ class CustomAppBar extends StatelessWidget {
                   backgroundColor: Colors.white,
                   padding: EdgeInsets.zero,
                 ),
-                onPressed: () // => Navigator.pop(context),
-                    =>
-                    Navigator.pushNamed(context, DiscountsScreen.routeName),
+                onPressed: () => Navigator.pop(context),
                 child: SvgPicture.asset(
                   "assets/icons/Phone.svg",
                   height: 15,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/screens/home/components/discount_banner_2.dart';
+import 'package:Locat/screens/home/components/discount_banner_2.dart';
 
 import '../../../size_config.dart';
 import 'categories.dart';

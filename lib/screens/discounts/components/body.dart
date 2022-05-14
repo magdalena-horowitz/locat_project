@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/default_button.dart';
-import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/screens/cart/cart_screen.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:Locat/components/default_button.dart';
+import 'package:Locat/models/Product.dart';
+import 'package:Locat/screens/cart/cart_screen.dart';
+import 'package:Locat/size_config.dart';
 
 import 'color_dots.dart';
 import 'product_description.dart';
