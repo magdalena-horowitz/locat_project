@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "148174480962",
+    "project_id": "locat2022",
+    "storage_bucket": "locat2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148174480962:android:dc25a538f6765659c56fdb",
+        "android_client_info": {
+          "package_name": "com.example.locat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148174480962-jvs5hpsog8g3m0eq1f69b4ltk7o7hjoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAirCUxz9EbDycteYQDAHAIA4fXvRWfwuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148174480962-jvs5hpsog8g3m0eq1f69b4ltk7o7hjoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
