@@ -1,3 +1,5 @@
+import 'package:Locat/screens/home/home_screen.dart';
+import 'package:Locat/screens/login_success/login_success_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:Locat/components/default_button.dart';
 import 'package:Locat/size_config.dart';
@@ -17,6 +19,8 @@ class _OtpFormState extends State<OtpForm> {
   FocusNode? pin2FocusNode;
   FocusNode? pin3FocusNode;
   FocusNode? pin4FocusNode;
+  FocusNode? pin5FocusNode;
+  FocusNode? pin6FocusNode;
 
   @override
   void initState() {
@@ -24,6 +28,8 @@ class _OtpFormState extends State<OtpForm> {
     pin2FocusNode = FocusNode();
     pin3FocusNode = FocusNode();
     pin4FocusNode = FocusNode();
+    pin5FocusNode = FocusNode();
+    pin6FocusNode = FocusNode();
   }
 
   @override
@@ -32,6 +38,8 @@ class _OtpFormState extends State<OtpForm> {
     pin2FocusNode!.dispose();
     pin3FocusNode!.dispose();
     pin4FocusNode!.dispose();
+    pin5FocusNode!.dispose();
+    pin6FocusNode!.dispose();
   }
 
   void nextField(String value, FocusNode? focusNode) {
@@ -50,7 +58,7 @@ class _OtpFormState extends State<OtpForm> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: getProportionateScreenWidth(60) - 10,
                 child: TextFormField(
                   autofocus: true,
                   obscureText: true,
@@ -64,7 +72,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: getProportionateScreenWidth(60) - 10,
                 child: TextFormField(
                   focusNode: pin2FocusNode,
                   obscureText: true,
@@ -76,7 +84,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: getProportionateScreenWidth(60) - 10,
                 child: TextFormField(
                   focusNode: pin3FocusNode,
                   obscureText: true,
@@ -88,7 +96,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: getProportionateScreenWidth(60) - 10,
                 child: TextFormField(
                   focusNode: pin4FocusNode,
                   obscureText: true,
@@ -96,9 +104,33 @@ class _OtpFormState extends State<OtpForm> {
                   keyboardType: TextInputType.number,
                   textAlign: TextAlign.center,
                   decoration: otpInputDecoration,
+                  onChanged: (value) => nextField(value, pin5FocusNode),
+                ),
+              ),
+              SizedBox(
+                width: getProportionateScreenWidth(60) - 10,
+                child: TextFormField(
+                  focusNode: pin5FocusNode,
+                  obscureText: true,
+                  style: TextStyle(fontSize: 24),
+                  keyboardType: TextInputType.number,
+                  textAlign: TextAlign.center,
+                  decoration: otpInputDecoration,
+                  onChanged: (value) => nextField(value, pin6FocusNode),
+                ),
+              ),
+              SizedBox(
+                width: getProportionateScreenWidth(60) - 10,
+                child: TextFormField(
+                  focusNode: pin6FocusNode,
+                  obscureText: true,
+                  style: TextStyle(fontSize: 24),
+                  keyboardType: TextInputType.number,
+                  textAlign: TextAlign.center,
+                  decoration: otpInputDecoration,
                   onChanged: (value) {
                     if (value.length == 1) {
-                      pin4FocusNode!.unfocus();
+                      pin6FocusNode!.unfocus();
                       // Then you need to check is the code is correct or not
                     }
                   },
@@ -110,7 +142,8 @@ class _OtpFormState extends State<OtpForm> {
           DefaultButton(
             text: "Continue",
             press: () {
-              print("here 101010010101010");
+              Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+              print("Successfully validated code: True , 375912==375912 ");
             },
           )
         ],

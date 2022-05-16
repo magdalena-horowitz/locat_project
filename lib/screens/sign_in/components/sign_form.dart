@@ -1,3 +1,4 @@
+import 'package:Locat/screens/otp/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:Locat/components/custom_surfix_icon.dart';
 import 'package:Locat/components/form_error.dart';
@@ -73,12 +74,13 @@ class _SignFormState extends State<SignForm> {
           DefaultButton(
             text: "Continue",
             press: () {
-              print("here 1012929929292");
+              print(
+                  "backend testing only: enter randomly generated code: 375912");
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           ),
