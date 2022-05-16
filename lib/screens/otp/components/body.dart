@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.05),
               Text(
-                "OTP Verification",
+                "2FA Verification",
                 style: headingStyle,
               ),
               Text("We sent your code to +1 845 576 ***"),
